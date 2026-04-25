@@ -30,3 +30,7 @@ Desktop.ini
 # Data caches & temp
 *.log
 .cache/
+
+# Large files (temporarily ignored)
+*.pdf
+*.docx
