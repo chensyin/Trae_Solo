@@ -1,0 +1,203 @@
+{
+  "name": "word_format_analyzer",
+  "description": "分析Word文档排版格式并应用到新文档",
+  "version": "1.0.0",
+  "author": "Trae AI",
+  "date": "2026-04-16",
+  "formats": {
+    "page_setup": {
+      "page_width": 8.268055555555556,
+      "page_height": 11.693055555555556,
+      "left_margin": 1.25,
+      "right_margin": 1.25,
+      "top_margin": 1.0,
+      "bottom_margin": 1.0
+    },
+    "common_styles": {
+      "Normal": {
+        "font_name": "",
+        "font_size": 10.5,
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": 3
+      },
+      "Heading 1": {
+        "font_name": "宋体",
+        "font_size": 24.0,
+        "bold": true,
+        "italic": null,
+        "color": "",
+        "alignment": 0
+      },
+      "Heading 2": {
+        "font_name": "宋体",
+        "font_size": 18.0,
+        "bold": true,
+        "italic": null,
+        "color": "",
+        "alignment": 0
+      },
+      "Heading 3": {
+        "font_name": "",
+        "font_size": 16.0,
+        "bold": true,
+        "italic": null,
+        "color": "",
+        "alignment": null
+      },
+      "Heading 4": {
+        "font_name": "Arial",
+        "font_size": 14.0,
+        "bold": true,
+        "italic": null,
+        "color": "",
+        "alignment": null
+      },
+      "toc 3": {
+        "font_name": "",
+        "font_size": "",
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": null
+      },
+      "Footer": {
+        "font_name": "",
+        "font_size": 9.0,
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": 0
+      },
+      "Header": {
+        "font_name": "",
+        "font_size": 9.0,
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": 3
+      },
+      "toc 1": {
+        "font_name": "",
+        "font_size": "",
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": null
+      },
+      "toc 2": {
+        "font_name": "",
+        "font_size": "",
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": null
+      },
+      "Normal (Web)": {
+        "font_name": "",
+        "font_size": 12.0,
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": 0
+      },
+      "WPSOffice手动目录 1": {
+        "font_name": "Times New Roman",
+        "font_size": 10.0,
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": null
+      },
+      "WPSOffice手动目录 2": {
+        "font_name": "Times New Roman",
+        "font_size": 10.0,
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": null
+      },
+      "WPSOffice手动目录 3": {
+        "font_name": "Times New Roman",
+        "font_size": 10.0,
+        "bold": null,
+        "italic": null,
+        "color": "",
+        "alignment": null
+      }
+    },
+    "sample_paragraphs": [
+      {
+        "text": "“双碳”新能源领域月度行业动态",
+        "style": "Normal",
+        "font_name": "微软雅黑",
+        "font_size": 18.0,
+        "bold": null,
+        "italic": null,
+        "alignment": 1,
+        "line_spacing": 1.0
+      },
+      {
+        "text": "（2026年1月）",
+        "style": "Normal",
+        "font_name": "宋体",
+        "font_size": 14.0,
+        "bold": null,
+        "italic": null,
+        "alignment": 1,
+        "line_spacing": 1.0
+      },
+      {
+        "text": "一、重要信息",
+        "style": "Normal",
+        "font_name": "仿宋",
+        "font_size": 14.0,
+        "bold": true,
+        "italic": null,
+        "alignment": 3,
+        "line_spacing": 1.0
+      },
+      {
+        "text": "本月无内容",
+        "style": "Normal",
+        "font_name": "仿宋",
+        "font_size": 14.0,
+        "bold": false,
+        "italic": false,
+        "alignment": 3,
+        "line_spacing": 1.0
+      },
+      {
+        "text": "二、其他相关信息",
+        "style": "Heading 1",
+        "font_name": "仿宋",
+        "font_size": 14.0,
+        "bold": true,
+        "italic": null,
+        "alignment": 3,
+        "line_spacing": 1.0
+      }
+    ],
+    "tables": [
+      {
+        "rows": 1,
+        "columns": 1,
+        "cells": [
+          {
+            "text": "25省市“十五五”规划氢能布局\n1、北京市“十五五”规划建议氢能要点\n积极稳妥推进“双碳”工作。优化...",
+            "font_name": "仿宋",
+            "font_size": 12.0
+          }
+        ]
+      }
+    ]
+  },
+  "instructions": [
+    "打开Word文档",
+    "应用页面设置",
+    "创建并应用样式",
+    "设置段落格式",
+    "应用表格格式"
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "name": "双碳新能源行业动态Word排版工具",
+  "description": "用于分析和应用'双碳'新能源领域月度行业动态文档的排版格式",
+  "version": "1.0.0",
+  "author": "Trae AI",
+  "date": "2026-04-16",
+  "target_software": "Microsoft Word",
+  "format_rules": {
+    "page_setup": {
+      "paper_size": "A4",
+      "page_width": "21.0 cm",
+      "page_height": "29.7 cm",
+      "margins": {
+        "left": "3.17 cm",
+        "right": "3.17 cm",
+        "top": "2.54 cm",
+        "bottom": "2.54 cm"
+      },
+      "orientation": "portrait"
+    },
+    "styles": {
+      "标题样式": {
+        "name": "文档标题",
+        "font": {
+          "name": "微软雅黑",
+          "size": "18",
+          "bold": false,
+          "italic": false
+        },
+        "paragraph": {
+          "alignment": "center",
+          "line_spacing": "single",
+          "space_before": "0 pt",
+          "space_after": "0 pt"
+        }
+      },
+      "日期样式": {
+        "name": "文档日期",
+        "font": {
+          "name": "宋体",
+          "size": "14",
+          "bold": false,
+          "italic": false
+        },
+        "paragraph": {
+          "alignment": "center",
+          "line_spacing": "single",
+          "space_before": "0 pt",
+          "space_after": "12 pt"
+        }
+      },
+      "章节标题样式": {
+        "name": "章节标题",
+        "font": {
+          "name": "仿宋",
+          "size": "14",
+          "bold": true,
+          "italic": false
+        },
+        "paragraph": {
+          "alignment": "right",
+          "line_spacing": "single",
+          "space_before": "12 pt",
+          "space_after": "6 pt"
+        }
+      },
+      "正文样式": {
+        "name": "正文内容",
+        "font": {
+          "name": "仿宋",
+          "size": "14",
+          "bold": false,
+          "italic": false
+        },
+        "paragraph": {
+          "alignment": "right",
+          "line_spacing": "single",
+          "space_before": "0 pt",
+          "space_after": "0 pt",
+          "first_line_indent": "0 pt"
+        }
+      },
+      "表格样式": {
+        "name": "数据表格",
+        "font": {
+          "name": "仿宋",
+          "size": "12",
+          "bold": false,
+          "italic": false
+        },
+        "table": {
+          "borders": "all",
+          "border_width": "0.5 pt",
+          "cell_padding": "5 pt",
+          "alignment": "left"
+        }
+      }
+    },
+    "document_structure": {
+      "sections": [
+        {
+          "name": "标题部分",
+          "styles": ["标题样式", "日期样式"]
+        },
+        {
+          "name": "正文部分",
+          "styles": ["章节标题样式", "正文样式"]
+        },
+        {
+          "name": "表格部分",
+          "styles": ["表格样式"]
+        }
+      ]
+    }
+  },
+  "application_steps": [
+    {
+      "step": 1,
+      "description": "打开Word文档",
+      "actions": [
+        "启动Microsoft Word",
+        "创建新文档或打开现有文档"
+      ]
+    },
+    {
+      "step": 2,
+      "description": "设置页面格式",
+      "actions": [
+        "点击'布局'选项卡",
+        "点击'页面设置'组中的对话框启动器",
+        "在'页面设置'对话框中设置：",
+        "  - 纸张大小：A4",
+        "  - 页边距：左、右各3.17cm，上、下各2.54cm",
+        "  - 方向：纵向",
+        "点击'确定'按钮"
+      ]
+    },
+    {
+      "step": 3,
+      "description": "创建样式",
+      "actions": [
+        "点击'开始'选项卡",
+        "点击'样式'组中的对话框启动器",
+        "在'样式'任务窗格中点击'新建样式'",
+        "根据'format_rules.styles'中的定义创建各个样式",
+        "为每个样式设置相应的字体和段落格式"
+      ]
+    },
+    {
+      "step": 4,
+      "description": "应用样式",
+      "actions": [
+        "将光标定位到文档标题位置",
+        "在'样式'任务窗格中选择'文档标题'样式",
+        "输入文档标题：'双碳'新能源领域月度行业动态",
+        "将光标定位到日期位置",
+        "选择'文档日期'样式",
+        "输入日期：'（2026年X月）'",
+        "将光标定位到章节标题位置",
+        "选择'章节标题'样式",
+        "输入章节标题，如'一、重要信息'",
+        "将光标定位到正文位置",
+        "选择'正文内容'样式",
+        "输入正文内容"
+      ]
+    },
+    {
+      "step": 5,
+      "description": "插入和设置表格",
+      "actions": [
+        "将光标定位到需要插入表格的位置",
+        "点击'插入'选项卡",
+        "点击'表格'按钮，选择合适的行列数",
+        "输入表格内容",
+        "选中表格",
+        "在'样式'任务窗格中选择'数据表格'样式"
+      ]
+    },
+    {
+      "step": 6,
+      "description": "保存文档",
+      "actions": [
+        "点击'文件'选项卡",
+        "点击'保存'或'另存为'",
+        "选择保存位置",
+        "输入文件名，格式为：'双碳新能源领域月度行业动态 YYYY年MM月'",
+        "点击'保存'按钮"
+      ]
+    }
+  ],
+  "sample_document": {
+    "title": "'双碳'新能源领域月度行业动态",
+    "date": "（2026年X月）",
+    "sections": [
+      {
+        "title": "一、重要信息",
+        "content": "本月无内容"
+      },
+      {
+        "title": "二、其他相关信息",
+        "content": "[具体内容]"
+      },
+      {
+        "title": "三、数据表格",
+        "table": {
+          "rows": 1,
+          "columns": 1,
+          "content": "25省市'十五五'规划氢能布局\n1、北京市'十五五'规划建议氢能要点\n积极稳妥推进'双碳'工作。优化..."
+        }
+      }
+    ]
+  }
+}

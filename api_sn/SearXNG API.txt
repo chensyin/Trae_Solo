@@ -1,0 +1,43 @@
+————Deepseek kye————
+deepseek-v4-flash
+deepseek-v4-pro
+
+Hades-Canyon  sk-3a789ef11ddd49608c0a30b0ce0f43bb
+
+
+
+————SearXNG API————
+e3448b1a6c4ccd6023d4642afc762e083cbf968f16729c9709fedff16f30d9dc
+
+
+
+————SearXNG MCP————
+——Windows-trae——
+
+{
+  "mcpServers": {
+    "searxng": {
+      "url": "http://43.130.31.216:8888/sse",
+      "headers": {
+        "Authorization": "Basic bG9vZm9yOk1vc2t2YUAyMDEz"
+      }
+    }
+  }
+}
+
+——Web-Solo——
+
+{
+  "mcpServers": {
+    "searxng": {
+      "env": {
+        "SEARXNG_URL": "http://43.130.31.216:8889/e3448b1a6c4ccd6023d4642afc762e083cbf968f16729c9709fedff16f30d9dc/"
+      },
+      "args": [
+        "-y",
+        "mcp-searxng"
+      ],
+      "command": "npx"
+    }
+  }
+}

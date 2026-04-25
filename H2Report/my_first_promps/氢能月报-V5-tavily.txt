@@ -1,0 +1,417 @@
+
++ 任务：编写{{REPORT_TITLE_MONTH}}氢能领域政策、产业、市场、技术进展报告
+
++ 详细说明：收集指定月份氢能领域的政策、产业、市场、技术信息，为全面了解该领域最新进展，发现投资机会提供信息支持。
+- 时间范围：{{DATE_RANGE_DISPLAY}}
+- 核心领域：氢能
+- 扩展领域：能源、双碳、绿色转型、生物质、储能
+- 氢能全产业链：制氢、储氢、运氢、加氢、用氢（交通、绿色能源、绿色化工、储能等）
+- 地域范围：中国、全球
+- 政策：中国国家层面相关政策&政策解读，省级和地区层面相关政策&政策解读，全球其他政府&国际组织&机构政策&政策解读
+- 产业：主要企业情况，项目立项、审批、招标、建设、验收等情况
+- 市场：市场规模、趋势和挑战，主要生产要素、产品价格趋势，应用场景（比如交通、工业脱碳）和产业经济性、投资趋势等
+- 技术：国内外科研机构围绕氢能全产业链的最新研究成果
+
++ 全局变量（唯一控制点，修改此处即可切换报告月份）
+- REPORT_YEAR：2026
+- REPORT_MONTH：3
+- REPORT_MONTH_CN：3月
+- REPORT_MONTH_EN：March
+- START_DATE：2026-03-01
+- END_DATE：2026-03-31
+- DATE_RANGE_DISPLAY：2026年3月1日-2026年3月31日
+- REPORT_TITLE_MONTH：2026年3月
+- CRAWL_INSTRUCTION_CN：提取{{REPORT_TITLE_MONTH}}氢能相关新闻标题、日期和链接
+- CRAWL_INSTRUCTION_EN：Extract all hydrogen industry news from {{REPORT_MONTH_EN}} {{REPORT_YEAR}}, including projects, policies, technology, and market developments
+- SEARCH_DATE_FILTER：start_date="{{START_DATE}}", end_date="{{END_DATE}}"
+
++ 质量校验
+- 是否严格按照时间范围（{{DATE_RANGE_DISPLAY}}）收集信息
+- 是否遵循工作流程的原则开展工作
+- 是否根据实际情况对工作流程进行了优化和提升
+- 是否到达控制点要求
+- 是否去除重复信息
+- 是否从正反两面搜集和分析信息（正面：突破、投产、达标、增长；负面：亏损、延期、事故、质疑、退坡、失败）
+- 是否使用反思链提高信息收集和处理的质量
+- 是否严格按照报告结构编写报告
+- 是否按照模板格式输出报告
+- 每条信息的字数是否500字以内
+- 每条信息后提供的网址是否正确，是否能够打开
+- 是否充分利用Tavily MCP的四大工具（search/extract/crawl/research）进行地毯式联网搜索
+
++ 报告结构：
+- 报告标题
+- 报告目录
+- 一、重要信息
+-- 1. 标题
+-- 内容摘要（控制点：字数控制在500字以内）
+-- URL：（控制点：确保位真实正确的网页地址）
+- 二、其他相关信息
+-- （一）研发动态
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （二）项目前期
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （三）项目建设
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （四）项目投产投运
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （五）项目测试和验收
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （六）市场和销售
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （七）合作投资重组
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （八）海外项目
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （九）国内政策风向
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+-- （十）其他
+--- 1. 标题
+--- 内容摘要（控制点：字数控制在500字以内）
+--- URL：（控制点：确保位真实正确的网页地址）
+
+- 三、政策解读
+-- 1. 标题
+-- 内容摘要（控制点：字数控制在500字以内）
+-- URL：（控制点：确保位真实正确的网页地址）
+
++ 报告章节内容说明：
+- 重要信息：国家级政策、省级和地区级政策
+- 其他相关信息
+-- 研发动态（产业、科研中与关键技术相关的最新进展）
+-- 项目前期（本月立项、备案）
+-- 项目建设（在建项目的施工、设备安装等进展）
+-- 项目投产投运（已建成项目的投产、投运、商业化运营）
+-- 项目测试和验收（项目的测试运行、竣工验收、性能验收）
+-- 市场和销售（产品销售、招标采购、市场价格、产业数据）
+-- 合作投资重组（企业间合作、投资、并购、重组）
+-- 海外项目（中国企业在海外的氢能项目，以及海外氢能市场动态）
+-- 国内政策风向（省级、市级层面的政策发布和动向）
+-- 其他（本月收集到的无法归类到上述分类的信息）
+- 三、政策解读（重要信息的解读）
+
++ 工作流程（基于人的参与、反思链和质量校验）：
+- 拆解任务，制定工作计划
+- 与人进行讨论，确定工作计划
+- 拆解关键词，确定搜索条件（控制点：时间范围使用全局变量 {{START_DATE}} ~ {{END_DATE}}）
+- 按照"Tavily四维搜索策略"使用Tavily MCP四大工具（tavily_search + tavily_crawl + tavily_extract + tavily_research）执行联网搜索（详见下方"搜索策略"章节）
+- 整理所有Tavily工具搜索返回的信息
+- 从返回信息中发现新关键词，使用新关键词进行下一轮搜索，进行不少于8轮新关键词→新搜索迭代（控制点：每轮从不同维度切入，避免重复搜索）
+- 合并整理所有轮次搜索返回的结果，去除重复信息
+- 按照报告结构进行整理
+- 按照格式模板生成markdown文件
+- 按照格式模板把markdown文件转为word文件
+
++ 搜索工具：Tavily MCP（唯一搜索工具）
+
+-- 说明：本方案仅使用Tavily MCP作为搜索工具，不再使用Solo内置的WebSearch、WebFetch、Browser等搜索工具。Tavily是专为AI Agent设计的搜索引擎API，具备搜索、爬取、提取、深度研究四大能力，可全面覆盖信息收集需求。
+
+-- 四大工具及核心能力：
+
+--- tavily_search：关键词搜索
+---- 核心优势：返回链接列表+内容摘要，advanced模式会动态抓取多个网页提取相关内容
+---- 关键参数：
+----- search_depth："basic"（快速，适合补充搜索）或 "advanced"（深度抓取多个源，推荐用于主力搜索轮次）
+----- max_results：最大返回条数，范围0-20（主力搜索建议设为20，补充搜索设为10-15）
+----- start_date / end_date：精确日期范围，格式YYYY-MM-DD（用于限定月份，所有搜索必须设置为 {{START_DATE}} 和 {{END_DATE}}）
+----- include_domains：限定搜索域名（如["gov.cn"]限定政府信息源，["h2-view.com"]限定国际氢能媒体）
+----- exclude_domains：排除域名（如["weibo.com","zhihu.com"]排除低质量信息源）
+----- topic："general"（默认值，通用搜索）
+----- include_answer：设为true可获取AI生成的答案摘要（适合快速了解主题全貌）
+----- exact_match：设为true仅返回包含精确短语的结果
+
+--- tavily_crawl：网站爬取
+---- 核心优势：从指定URL出发，按深度和广度爬取整站内容，一次获取20-50条信息
+---- 关键参数：
+----- url：起始URL
+----- max_depth：爬取深度（建议设为2，覆盖起始页+二级页面）
+----- max_breadth：每页最大跟踪链接数（建议设为20-30）
+----- limit：最大处理页面数（建议设为30-50）
+----- instructions：自然语言指令，指导爬虫筛选目标内容（使用变量 {{CRAWL_INSTRUCTION_CN}} 或 {{CRAWL_INSTRUCTION_EN}}）
+----- select_paths：正则表达式筛选URL路径（如["/news/.*","/html/h2-.*\\.shtml"]）
+----- select_domains：正则表达式限定域名
+----- extract_depth："advanced"可提取表格和嵌入内容（适合抓取政策汇总页、数据报告页）
+
+--- tavily_extract：URL内容提取
+---- 核心优势：批量提取指定URL的全文内容，返回markdown格式，适合深度阅读政策原文、项目详情
+---- 关键参数：
+----- urls：URL列表（支持批量，建议每次5-10个URL）
+----- query：用于重排内容块的相关性查询（如"氢能政策要点"）
+----- extract_depth："advanced"适合LinkedIn、受保护站点、表格/嵌入内容
+
+--- tavily_research：深度研究
+---- 核心优势：自主进行多轮搜索+内容提取+综合分析，返回结构化研究报告
+---- 关键参数：
+----- input：详细描述研究任务（使用变量引用时间范围）
+----- model："mini"（窄主题、少子话题）或 "pro"（宽主题、多子话题）或 "auto"（自动选择）
+---- 速率限制：每分钟20次请求
+---- 适用场景：需要快速获取某个主题的全貌概览时使用
+
++ 搜索策略：Tavily四维搜索策略
+
+由于仅使用Tavily MCP作为搜索工具，需要充分发挥其四大工具的协同优势。核心思路是：tavily_crawl负责批量抓取聚合站获取大量线索，tavily_search负责精准搜索补充，tavily_extract负责深度提取重要文章全文，tavily_research负责快速获取主题全貌。
+
+-- 维度一：聚合站爬取（信息量基石，tavily_crawl）
+--- 核心逻辑：tavily_crawl一次调用可获取20-50条信息，是最高效的信息获取方式
+--- 执行方式：对氢能行业聚合站进行定向爬取，获取指定月份的全部新闻列表
+--- 目标站点及爬取参数：
+
+---- 国内站点：
+----- 氢能汇（国际能源网）：https://mh2.in-en.com/
+------ tavily_crawl参数：url="https://mh2.in-en.com/", max_depth=2, max_breadth=30, limit=50, instructions="{{CRAWL_INSTRUCTION_CN}}", select_paths=["/html/h2-.*\\.shtml"]
+------ 预期产出：20-50条国内氢能项目、政策、企业动态
+
+----- 碳索氢能网（SolarBe）：https://h2.solarbe.com/
+------ tavily_crawl参数：url="https://h2.solarbe.com/", max_depth=2, max_breadth=25, limit=40, instructions="提取{{REPORT_TITLE_MONTH}}氢能行业新闻和政策动态"
+------ 预期产出：15-30条国内外氢能新闻
+
+----- 全球氢能网（中国能源网）：http://h2.china-nengyuan.com/
+------ tavily_crawl参数：url="http://h2.china-nengyuan.com/", max_depth=2, max_breadth=20, limit=30, instructions="提取{{REPORT_TITLE_MONTH}}氢能产业新闻、技术进展、项目动态"
+------ 预期产出：15-30条全链条氢能信息
+
+---- 国际站点：
+----- H2 View：https://www.h2-view.com/
+------ tavily_crawl参数：url="https://www.h2-view.com/", max_depth=2, max_breadth=25, limit=40, instructions="{{CRAWL_INSTRUCTION_EN}}"
+------ 预期产出：20-40条国际氢能动态
+
+----- Hydrogen Monitor：https://hydrogen-monitor.com/
+------ tavily_crawl参数：url="https://hydrogen-monitor.com/", max_depth=2, max_breadth=20, limit=30, instructions="Extract hydrogen project and policy updates from {{REPORT_MONTH_EN}} {{REPORT_YEAR}}"
+------ 预期产出：10-20条欧洲氢能项目动态
+
+--- 维度一总计预期：80-170条原始信息线索
+
+-- 维度二：精准搜索（信息补充与验证，tavily_search）
+--- 核心逻辑：tavily_search的advanced模式会抓取多个源并提取内容，max_results=20远超一般搜索工具的5条限制
+--- 关键词系统化拆解（确保每轮覆盖不同维度，避免重复）：
+
+--- 按产业链环节：
+---- 制氢：电解槽/碱性/PEM/AEM/SOEC/光伏制氢/海水制氢/生物质制氢
+---- 储氢：高压/液氢/固态储氢/有机液体储氢/管道/盐穴
+---- 运氢：管道/槽车/掺氢/长输管道
+---- 加氢：加氢站/油氢合建站/加氢设备
+---- 用氢：燃料电池/氢能汽车/氢冶金/绿氨/绿甲醇/掺氢燃烧/氢能船舶/氢能航空/氢储能
+
+--- 按信息类型：
+---- 政策：补贴/试点/示范/标准/规划/法规
+---- 项目：备案/环评/开工/建设/投产/验收/招标/中标
+---- 市场：价格/招标/装机/产能/出货量/订单
+---- 企业：融资/合作/并购/上市/破产/签约
+
+--- 按正反面：
+---- 正面：突破/首次/创纪录/投产/达标/出口/交付
+---- 负面：延期/亏损/事故/质疑/退坡/失败/取消/停运
+
+--- 按地域：
+---- 国内：内蒙古/新疆/河北/山东/广东/四川/吉林/甘肃/湖北等
+---- 国际：欧盟/美国/日本/中东/澳洲/韩国/印度/东南亚
+
+--- tavily_search标准参数模板（所有搜索必须使用，时间范围通过变量引用）：
+{
+  "query": "<具体关键词> {{REPORT_MONTH_CN}}",
+  "search_depth": "advanced",
+  "start_date": "{{START_DATE}}",
+  "end_date": "{{END_DATE}}",
+  "max_results": 20,
+  "topic": "general"
+}
+
+--- 域名限定搜索技巧：
+---- 限定政府信息源：include_domains=["gov.cn","miit.gov.cn","ndrc.gov.cn","mof.gov.cn","nea.gov.cn"]
+---- 限定国际氢能媒体：include_domains=["h2-view.com","hydrogeninsight.com","rechargenews.com"]
+---- 排除低质量信息源：exclude_domains=["weibo.com","zhihu.com","baidu.com"]
+
+-- 维度三：深度提取（重要信息全文获取，tavily_extract）
+--- 核心逻辑：tavily_search和tavily_crawl返回的是摘要信息，对重要政策原文、重大项目新闻需要提取全文
+--- 执行方式：从维度一和维度二的结果中筛选高价值URL，使用tavily_extract批量提取全文
+--- 适用场景：
+---- 国家级政策原文（如工信部、发改委、财政部发布的政策文件）
+---- 重大项目新闻详情（如百万吨级绿氢项目开工、重大技术突破）
+---- 权威机构报告（如IEA、彭博新能源财经等发布的氢能报告）
+--- 参数示例：
+{
+  "urls": ["https://url1.com","https://url2.com","https://url3.com","https://url4.com","https://url5.com"],
+  "query": "氢能政策要点",
+  "extract_depth": "advanced"
+}
+--- 建议每批次提取5-10个URL，根据需要执行2-3批次
+
+-- 维度四：主题研究（快速全貌获取，tavily_research）
+--- 核心逻辑：tavily_research可自主进行多轮搜索+分析，一次性返回结构化研究报告
+--- 适用场景：
+---- 快速获取某个子领域的月度全貌（如"{{REPORT_TITLE_MONTH}}全球氢能政策动态"）
+---- 交叉验证已有信息，发现遗漏
+---- 获取深度分析视角
+--- 参数示例（时间范围通过变量引用）：
+{
+  "input": "请全面研究{{REPORT_TITLE_MONTH}}中国氢能产业的政策动态、重大项目进展、技术突破和市场变化，包括制氢、储氢、运氢、加氢、用氢全产业链",
+  "model": "pro"
+}
+--- 注意：tavily_research有速率限制（每分钟20次），建议在搜索流程中谨慎使用，每次任务调用1-3次即可
+
++ 优化后的搜索执行方案（8轮迭代）：
+
+-- 第1轮：聚合站批量爬取（维度一，信息量基石）
+--- 工具：tavily_crawl × 5（并行执行）
+--- 目标：氢能汇 + 碳索氢能网 + 全球氢能网 + H2 View + Hydrogen Monitor
+--- 预期产出：80-170条原始信息线索
+--- 关键动作：爬取完成后，提取所有标题、URL、日期，建立信息线索库
+
+-- 第2轮：中文精准广搜（维度二，政策+项目+技术）
+--- 工具：tavily_search × 3（并行执行）
+--- 搜索1：tavily_search(query="氢能 政策 {{REPORT_MONTH_CN}} 国务院 发改委 工信部", search_depth="advanced", max_results=20, {{SEARCH_DATE_FILTER}}, include_domains=["gov.cn","miit.gov.cn","ndrc.gov.cn","mof.gov.cn"])
+--- 搜索2：tavily_search(query="氢能 项目 建设 投产 开工 {{REPORT_MONTH_CN}}", search_depth="advanced", max_results=20, {{SEARCH_DATE_FILTER}})
+--- 搜索3：tavily_search(query="制氢 电解槽 燃料电池 技术突破 {{REPORT_MONTH_CN}}", search_depth="advanced", max_results=20, {{SEARCH_DATE_FILTER}})
+--- 预期产出：40-60条信息（含内容摘要）
+
+-- 第3轮：英文精准广搜（维度二，全球动态）
+--- 工具：tavily_search × 2（并行执行）
+--- 搜索1：tavily_search(query="hydrogen energy green hydrogen project policy {{REPORT_MONTH_EN}} {{REPORT_YEAR}}", search_depth="advanced", max_results=20, {{SEARCH_DATE_FILTER}})
+--- 搜索2：tavily_search(query="hydrogen fuel cell electrolyzer investment market {{REPORT_MONTH_EN}} {{REPORT_YEAR}}", search_depth="advanced", max_results=20, {{SEARCH_DATE_FILTER}})
+--- 预期产出：30-40条国际信息
+
+-- 第4轮：产业链定向深搜（维度二，按环节补充）
+--- 工具：tavily_search × 3（并行执行）
+--- 搜索1：tavily_search(query="储氢 固态储氢 液氢 管道氢 加氢站 {{REPORT_MONTH_CN}}", search_depth="advanced", max_results=15, {{SEARCH_DATE_FILTER}})
+--- 搜索2：tavily_search(query="绿氨 绿甲醇 氢冶金 掺氢燃烧 工业应用 {{REPORT_MONTH_CN}}", search_depth="advanced", max_results=15, {{SEARCH_DATE_FILTER}})
+--- 搜索3：tavily_search(query="氢能 融资 投资 并购 合作 签约 企业 {{REPORT_MONTH_CN}}", search_depth="advanced", max_results=15, {{SEARCH_DATE_FILTER}})
+--- 预期产出：30-45条信息
+
+-- 第5轮：负面+争议信息专项搜索（维度二，正反两面）
+--- 工具：tavily_search × 2（并行执行）
+--- 搜索1：tavily_search(query="氢能 安全事故 隐患 爆炸 泄漏 {{REPORT_MONTH_CN}}", search_depth="basic", max_results=10, {{SEARCH_DATE_FILTER}})
+--- 搜索2：tavily_search(query="hydrogen project delay cancellation loss bankruptcy challenge {{REPORT_MONTH_EN}} {{REPORT_YEAR}}", search_depth="basic", max_results=10, {{SEARCH_DATE_FILTER}})
+--- 预期产出：10-20条负面/争议信息
+
+-- 第6轮：深度提取（维度三，重要信息全文获取）
+--- 工具：tavily_extract × 2-3批次（每批5-10个URL）
+--- 目标：从第1-5轮结果中筛选15-30个高价值URL，批量提取全文
+--- 优先提取：政策原文URL、重大项目新闻URL、权威机构报告URL
+--- 预期产出：15-30篇重要文章全文内容
+
+-- 第7轮：反思链迭代搜索（维度二，新关键词驱动）
+--- 工具：tavily_search × 3-4（根据第1-6轮发现的新关键词定向搜索）
+--- 执行逻辑：
+---- 从前6轮结果中提取新发现的企业名、项目名、地名、技术术语
+---- 将新关键词与已有关键词树交叉组合
+---- 每个搜索从不同维度切入，避免与第2-5轮重复
+--- 示例（具体关键词根据实际搜索结果动态确定）：
+---- 如果发现"某企业获得大额融资"→ 搜索该企业名称+氢能
+---- 如果发现"某地出台氢能补贴政策"→ 搜索该地区+氢能+政策
+---- 如果发现"某技术取得突破"→ 搜索该技术术语+氢能+应用
+--- 预期产出：20-40条补充信息
+
+-- 第8轮：查漏补缺+交叉验证
+--- 工具：tavily_research × 1-2（维度四）+ tavily_search × 按需
+--- tavily_research使用（时间范围通过变量引用）：
+---- research1：input="{{REPORT_TITLE_MONTH}}中国氢能产业全链条最新进展综述，包括政策、项目、技术、市场", model="pro"
+---- research2（如需）：input="{{REPORT_MONTH_EN}} {{REPORT_YEAR}} global hydrogen energy industry update: policies, projects, investments, technology breakthroughs", model="pro"
+--- 根据research结果，检查是否有遗漏的重要信息
+--- 如有遗漏，使用tavily_search定向补充
+--- 预期产出：10-20条补充信息+交叉验证
+
+-- 搜索轮次汇总：
+--- tavily_crawl：5次（第1轮）
+--- tavily_search：约15-20次（第2-5、7-8轮）
+--- tavily_extract：2-3批次（第6轮）
+--- tavily_research：1-2次（第8轮）
+--- 预期总产出：200-350条原始信息线索，去重后50-80条有效信息
+
++ 反思链迭代机制
+
+-- 每轮搜索后必须执行以下三步反思：
+--- 1. 标记：从本轮结果中标记出新的、有价值的、与已有信息不重复的内容
+--- 2. 提取：从新内容中提取人名、企业名、项目名、地名、技术术语、政策文件名等关键实体
+--- 3. 组合：将新提取的关键实体与关键词树交叉组合，形成下一轮搜索条件
+--- 4. 检查：对照报告结构的10个子分类，识别哪些分类信息充足、哪些分类信息不足，下一轮优先补充不足分类
+
+-- 反思链示例（时间范围通过变量引用）：
+--- 第1轮爬取 → 发现"某省发布氢能补贴政策"
+--- 提取新关键词 → 省名+"氢能补贴"
+--- 第2轮搜索 → tavily_search(query="省名 氢能 补贴 政策 {{REPORT_MONTH_CN}}", {{SEARCH_DATE_FILTER}})
+--- 发现新线索 → "该省同时布局了氢能重卡示范项目"
+--- 第3轮搜索 → tavily_search(query="省名 氢能重卡 示范 {{REPORT_MONTH_CN}}", {{SEARCH_DATE_FILTER}})
+
++ 氢能行业聚合站清单（tavily_crawl目标站点）
+
+-- 国内中文站点
+
+--- Tier 1（单次可获20-50条信息，首选爬取目标）：
+---- 氢能汇（国际能源网旗下）：https://mh2.in-en.com/ — 国内最大的氢能项目数据库，覆盖备案、招中标、项目动态
+---- 氢能观察：https://m.ne21.com/news/list-1685-191.html — 行业分析深度好，覆盖企业动态、投融资、政策解读
+
+--- Tier 2（单次可获10-20条信息）：
+---- 全球氢能网（中国能源网旗下）：http://h2.china-nengyuan.com/ — 覆盖制氢/储氢/加氢/燃料电池全链条
+---- 碳索氢能网（SolarBe旗下）：https://h2.solarbe.com/ — 海外氢能新闻翻译质量高
+---- FuelCellChina：https://cn.fuelcellchina.com/ — 中英双语，燃料电池产业信息枢纽
+---- 氢能源网：http://www.china-hydrogen.org — 老牌氢能门户，政策法规、技术标准信息丰富
+---- 氢能促进会：https://cn-heipa.com/ — 中国氢能促进会官网，企业动态和项目信息权威
+
+--- Tier 3（单次可获5-10条信息，按需爬取）：
+---- 高工氢电：https://www.gg-lb.com/ — 深度行业研究，电解槽/燃料电池技术分析
+---- 势银能链（TrendBank）：https://www.trendbank.com/ — 产业研究+数据服务
+---- 氢云链：https://www.qingyunlian.com/ — 氢能产业数据平台
+---- 快氢网：https://www.kuaiqing.cn/ — 氢能垂直门户
+
+--- Tier 4（特定用途，tavily_search域名限定目标）：
+---- 政府/机构官网（通过include_domains限定搜索）：
+----- 财政部：m.mof.gov.cn
+----- 工信部：wap.miit.gov.cn / miit.gov.cn
+----- 发改委：www.ndrc.gov.cn
+----- 国家能源局：www.nea.gov.cn
+----- 交通运输部海事局：www.mot.gov.cn
+---- 综合能源媒体（通过include_domains限定搜索）：
+----- 中国能源网：www.china-nengyuan.com
+----- 北极星电力网：news.bjx.com.cn
+----- 国际能源网：www.in-en.com
+----- 东方财富：www.eastmoney.com
+
+-- 国际英文站点
+
+--- Tier 1（单次可获20-50条信息，首选爬取目标）：
+---- H2 View（国际）：https://www.h2-view.com/ — 全球最权威的氢能行业媒体之一，日更，覆盖项目/政策/技术/市场
+
+--- Tier 2（单次可获10-20条信息）：
+---- Hydrogen Monitor：https://hydrogen-monitor.com/ — 欧洲氢能项目动态，储运/管道/盐穴专题
+
+--- Tier 3（按需爬取或域名限定搜索）：
+---- Hydrogen Insight：https://hydrogeninsight.com/
+---- Recharge News：https://www.rechargenews.com/
+---- Fuel Cells Works：https://fuelcellsworks.com/
+
++ Tavily MCP调用注意事项
+
+-- 速率管理：
+--- tavily_search：无严格速率限制，但建议每批并行调用不超过3-5个
+--- tavily_crawl：单次爬取可能耗时30-60秒，建议并行调用不超过3个
+--- tavily_extract：批量提取5-10个URL，建议每批间隔数秒
+--- tavily_research：速率限制20次/分钟，每次任务调用1-3次即可
+
+-- 参数优化建议：
+--- 所有tavily_search必须设置start_date="{{START_DATE}}"和end_date="{{END_DATE}}"，确保结果在指定月份范围内
+--- 主力搜索使用search_depth="advanced"（深度抓取多个源），补充搜索使用"basic"（快速）
+--- max_results在主力搜索时设为20（最大值），在定向补充时设为10-15
+--- 使用include_domains限定信息源可显著提高结果相关性
+--- 使用include_answer=true可快速获取AI生成的主题摘要，适合初步了解
+
+-- 错误处理：
+--- 如tavily_crawl某个站点失败，改用tavily_search + include_domains限定该站点域名进行搜索
+--- 如tavily_extract某个URL失败，跳过该URL继续处理其他URL
+--- 如tavily_research返回结果不理想，改用多次tavily_search组合替代

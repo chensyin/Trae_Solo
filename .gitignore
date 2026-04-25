@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+
+# Binaries & Archives
+*.exe
+*.msi
+*.zip
+*.ppk
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.history/
+
+# Trae
+.trae/skills/hydrogen-report/hydrogen-search-output/
+
+# Data caches & temp
+*.log
+.cache/
