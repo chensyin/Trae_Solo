@@ -31,6 +31,6 @@ Desktop.ini
 *.log
 .cache/
 
-# Large files (temporarily ignored)
-*.pdf
-*.docx
+# Large files
+# *.pdf
+# *.docx
